@@ -1,0 +1,11 @@
+{
+  "llm_calls": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "model": null,
+  "estimated_cost_usd": 0.0,
+  "weekly_route_rows": 728,
+  "flagged_rows": 15,
+  "yes": 11,
+  "justified": 4
+}

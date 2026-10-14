@@ -1,0 +1,29 @@
+[PASS] A golden Delhi-Jaipur 2024-11-11
+[PASS] A golden Ahmedabad-Mumbai 2025-01-20
+[PASS] A golden Mumbai-Pune 2025-09-15
+[PASS] B independent recompute matches engine on 728 route-weeks (max abs err 1.78e-15)
+[PASS] B independent flag set == pipeline flag set
+[PASS] C Chennai-Bangalore 2025-02-24 -> N001 (flood window start)
+[PASS] C Chennai-Bangalore 2025-03-03 -> N001 (flood window, week ends Mar 9)
+[PASS] C Chennai-Bangalore 2025-03-10 -> unexplained (window ended Mar 8; N009 says normal -> must NOT match)
+[PASS] C Chennai-Bangalore 2025-03-17 -> unexplained (N009 'returned to normal' is not a cost-rise note)
+[PASS] C Chennai-Bangalore 2025-02-17 -> unexplained (week before flood window)
+[PASS] C Ahmedabad-Mumbai 2025-01-20 -> N002 (festival week)
+[PASS] C Ahmedabad-Mumbai 2025-01-27 -> unexplained (week after festival week)
+[PASS] C Delhi-Jaipur 2025-01-20 -> unexplained (N002 is for another route)
+[PASS] C Mumbai-Delhi 2024-07-29 -> unexplained (N005 says costs not significantly affected)
+[PASS] C Delhi-Jaipur 2024-05-20 -> unexplained (N007 improved roads, not a rise)
+[PASS] C Kolkata-Bhubaneswar 2025-06-09 -> unexplained (N008 no disruptions)
+[PASS] C Mumbai-Pune 2025-09-15 -> unexplained (N006 stable demand (+ N006 dated a week later))
+[PASS] C Mumbai-Pune 2025-10-27 -> unexplained (N010 no rate change)
+[PASS] C Delhi-Jaipur 2024-03-11 -> unexplained (N004 routes not in dataset)
+[PASS] C Mumbai-Delhi 2025-06-02 -> N003 (diesel, inside 8-wk window, size ok)
+[PASS] C Mumbai-Delhi 2025-05-12 -> unexplained (diesel note says 5-7%; +11.6% is too large to attribute)
+[PASS] C Mumbai-Pune 2025-04-28 -> unexplained (week before diesel note starts)
+[PASS] C Mumbai-Pune 2025-07-07 -> unexplained (after diesel window)
+[PASS] C 'no effect' notes never pass the gate for any route-week (7 routes x 104 weeks x 7 notes)
+[PASS] C mutation: N002 re-scoped to Delhi-Jaipur no longer justifies Ahmedabad-Mumbai
+[PASS] D columns/order match sample_output_format_v2.csv
+[PASS] D all 15 output rows satisfy invariants (Monday, route/window/effect re-checked, id+date cited in reason)
+
+27/27 checks passed
